@@ -1,21 +1,22 @@
 ﻿// Задача 14 
 // Найти третью цифру числа или сообщить, что ее нет 
 
-int GetRandom()
-{
-    int number = new Random().Next(0, 1000);
-    return number;
-}
-int randomazer = GetRandom();
-Console.WriteLine($"Случайное число: {randomazer}");
+Console.Write("Введите число: ");
 
-int noThreeDigit = randomazer / 10;
-int threeDigit = randomazer % 10;
-if (noThreeDigit >= 10)
-{
-    Console.WriteLine($"Третья цифра числа: {threeDigit}");
-}
-else
-{
-    Console.WriteLine($"Третьей цифры нет ");
-}
+ string arbitraryNumberStr = Console.ReadLine();
+ if(int.TryParse(arbitraryNumberStr, out int arbitraryNumberInt))
+ {
+     if(arbitraryNumberStr.Length >= 3)
+    {
+        Console.WriteLine($"Третья цифра числа: {arbitraryNumberStr[2]}");
+    }
+     else
+     {
+         Console.WriteLine("Число не трехзначное.");
+     }
+ }
+  else
+  {
+      Console.WriteLine("Ввели не число.");
+  }
+
