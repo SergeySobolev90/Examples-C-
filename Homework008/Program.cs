@@ -3,7 +3,7 @@
 
 Console.Write("Введите число N: ");
 string userNumber = Console.ReadLine();
-double number = int.Parse(userNumber);
+int number = int.Parse(userNumber);
 
 for (int initialNum = 2; initialNum < number; initialNum++)
 {
