@@ -11,12 +11,8 @@ while (dayWeek <= 0 || dayWeek >= 8)
     int.TryParse(dayWeekStr, out dayWeek);
 }
 
-int[] dayWeekNumber = { 1, 2, 3, 4, 5, 6, 7 };
+string[] dayWeekNumber = { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" };
 if (dayWeek < 6)
-{
-    Console.WriteLine($"Номер: {dayWeekNumber[dayWeek - 1]} является будним днем ");
-}
+    Console.WriteLine($"{dayWeekNumber[dayWeek - 1]} будний день ");
 else
-{
-    Console.WriteLine($"Номер: {dayWeekNumber[dayWeek - 1]} является выходным днем ");
-}
+    Console.WriteLine($"{dayWeekNumber[dayWeek - 1]} выходной день ");
