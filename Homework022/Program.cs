@@ -4,10 +4,10 @@
 
 int InPut(string message)
 {
-  Console.Write(message);
-  string numberStr = Console.ReadLine();
-  int number = int.Parse(numberStr);
-  return number;
+    Console.Write(message);
+    string numberStr = Console.ReadLine();
+    int number = int.Parse(numberStr);
+    return number;
 }
 
 double DistancePoints2D(double x1, double x2, double y1, double y2)
@@ -25,7 +25,7 @@ double DistancePoints3D(double x1, double x2, double y1, double y2, double z1, d
 Console.Write("Выберете пространство 2D или 3D: ");
 string space = Console.ReadLine();
 
-if(space == "2D")
+if (space == "2D")
 {
     double corr1 = InPut("Введите координату х1: ");
     double corr2 = InPut("Введите координату y1: ");
@@ -35,7 +35,7 @@ if(space == "2D")
     Console.Write($"Расстояние между двумя точками в пространстве {space}: {rasst2D} ");
 }
 
-if(space == "3D")
+if (space == "3D")
 {
     double corr1 = InPut("Введите координату х1: ");
     double corr2 = InPut("Введите координату y1: ");
