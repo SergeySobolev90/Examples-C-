@@ -28,7 +28,7 @@ void Difference()
             min = arr[i];
     }
     diff = max - min;
-    Console.WriteLine($"Разница между max {max} и min {min} = {diff}");
+    Console.WriteLine($"Разница между max {max:F2} и min {min:F2} = {diff:F2}");
 }
 
 FullArray();
