@@ -6,9 +6,10 @@ int[] arr = new int[10];
 
 void FullArray()
 {
+    Random ran = new Random();
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = new Random().Next(100, 1000);
+        arr[i] = ran.Next(100, 1000);
         Console.Write($"{arr[i]}");
     }
 }
